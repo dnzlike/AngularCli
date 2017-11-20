@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -9,6 +9,7 @@ import { CurrencyComponent } from './currency/currency.component';
 import { MovieComponent } from './movie/movie.component';
 import { CONST_ROUTING } from './app.routing';
 import { AboutComponent } from './about/about.component';
+
 
 
 @NgModule({
@@ -26,5 +27,9 @@ import { AboutComponent } from './about/about.component';
   ],
 
   bootstrap: [AppComponent],
+
+  schemas:[
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }
